@@ -1,4 +1,4 @@
-package com.gmail.yevgen.v.o;
+//package com.gmail.yevgen.v.o;
 
 import java.util.Scanner;
 
@@ -34,7 +34,7 @@ public class Anagram {
         line = line.substring(length);
     }
 
-    private static void addAnagram(int firstLetter, int k) {
+    private static void addAnagram(int firstLetter, int lastLetter) {
         for (int i = 0; i < lastLetter - firstLetter + 1; i++) {
             line = line + line.charAt(lastLetter - i);
         }
